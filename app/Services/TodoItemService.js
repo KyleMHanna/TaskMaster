@@ -18,7 +18,7 @@ class TodosItemService {
       )
   }
   deleteTodo(id){
-    let x = confirm("Are you sure you want to delete this task?")
+    let x = confirm("Are you sure you want to delete this todo?")
         if(x == true){
     ProxyState.todos = ProxyState.todos.filter(t => t.id != id)
     Swal.fire(
