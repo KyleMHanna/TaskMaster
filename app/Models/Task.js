@@ -7,7 +7,7 @@ export class Task {
   constructor(taskData){
     this.title = taskData.title,
     this.id = taskData.id || generateId()
-    this.check = taskData.check || false
+    this.checked = taskData.checked || false
     this.color = taskData.color
 
   }

@@ -34,8 +34,11 @@ class TodosItemService {
     let todo = ProxyState.todos.find(t => id == t.id)
     console.log(todo);
     todo.checked = !todo.checked;
+  // let checkedTasks = foundTasks.filter(f => f.checked == 'checked')
 
+  //   checkedTasks.unchecked = !checkedTasks.unchecked
     ProxyState.todos = ProxyState.todos
+    
 
 
     }

@@ -16,7 +16,8 @@ export class TodosController{
   let todo ={
     title: form.todoTitle.value,
     taskId: taskId,
-    checked: false
+    checked: false,
+    unchecked: true
   }
 
   todosItemService.createTodo(todo)
@@ -28,8 +29,10 @@ todosItemService.deleteTodo(id)
 }
 
 completeTodo(id){
-  
+  // checkedTasks= false
+  // unchecked= true
   todosItemService.completeTodo(id)
+
   }
 
 uncompletedTodo(id){
